@@ -6,6 +6,105 @@
     <title>Podatkovni model</title>
 </head>
 <body>
+    <h2>Opis podatkovnega modela</h2>
+    <p>Podatki se ob vnosu novega uporabnika ali knjige prenesejo na strežnik. <br />
+    Prav tako so vsi podatki shranjeni le na strežniku, saj aplikacija ne podpira <br />
+    načina brez povezave. Edina izjema temu sta uporabniško ime in geslo, <br />
+    ki sta shranjena tudi na napravi, saj s tem omogočimo hiter zagon aplikacije, <br />
+    kjer se prijava opravi v ozadju in se od strežnika pridobi le žeton seje.</p>
 
+    <br />
+
+    <h3>Podatkovni model z razredi in atributi:</h3>
+
+    <h2>Person</h2>
+    <ul>
+        <li>PersonID</li>
+        <li>Name</li>
+        <li>Surname</li>
+        <li>BirthDate</li>
+        
+    </ul>
+    <h2>User:Person</h2>
+    <ul>
+        <li>Location</li>
+    </ul>
+    <h2>Author:Person</h2>
+    <ul>
+        <li>Pseudonym</li>
+    </ul>
+    <h2>Book</h2>
+    <ul>
+        <li>BookID</li>
+        <li>Title</li>
+        <li>ReleaseDate</li>
+        <li><b>Author</b></li>
+    </ul>
+    <h2>Advert</h2>
+    <ul>
+        <li>AdvertID</li>
+        <li>Title</li>
+        <li>Description</li>
+        <li>DateAdded</li>
+        <li>Status</li>
+        <li><b>User</b></li>
+        <li><b>Book</b></li>
+    </ul>
+    <h2>Chat</h2>
+    <ul>
+        <li>ChatID</li>
+        <li>StartDate</li>
+    </ul>
+    <h2>Message</h2>
+    <ul>
+        <li>MessageID</li>
+        <li>Text</li>
+        <li>DateTime</li>
+        <li><b>Chat</b></li>
+        <li><b>User</b></li>
+    </ul>
+    <h2>Picture</h2>
+    <ul>
+        <li>PictureID</li>
+        <li>Picture</li>
+        <li>DateAdded</li>
+        <li><b>Advert</b></li>
+    </ul>
+    <h2>Token</h2>
+    <ul>
+        <li>TokenID</li>
+        <li>Token</li>
+        <li>CreateDate</li>
+        <li>Active</li>
+        <li><b>User</b></li>
+    </ul>
+    <h2>Genre</h2>
+    <ul>
+        <li>GenreID</li>
+        <li>Genre</li>
+    </ul>
+    <h2>UserLikesGenre</h2>
+    <ul>
+        <li>UserLikesGenreID</li>
+        <b>User</b>
+        <b>Genre</b>
+    </ul>
+    <h2>UserLikesAuthor</h2>
+    <ul>
+        <li>UserLikesAuthorID</li>
+        <li><b>User</b></li>
+        <li><b>Author</b></li>
+</ul>
+    <h2>UserLikesBook</h2>
+    <ul>
+        <li>UserLikesBookID</li>
+        <li><b>User</b></li>
+        <li><b>Book</b></li>
+</ul>
+    <h2>SearchParameters</h2>
+    <ul>
+        <li>Query</li>
+        <li>Token</li>
+    </ul>
 </body>
 </html>

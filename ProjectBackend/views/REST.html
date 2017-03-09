@@ -6,6 +6,56 @@
     <title>REST</title>
 </head>
 <body>
+    <h2>REST methods:</h2>
 
+    <br />
+
+    <h2>User</h2>
+    <ul>
+        <li>Login(Username, Password)</li>
+        <li>Register(User)</li>
+        <li>EditUser(User)</li>
+        <li>DeleteUser(Token)</li>
+        <li>GetUser(UserID)</li>
+        <li>GetCurrentUser(Token)</li>
+        <li>AddLocation(Token, Location)</li>
+    </ul>
+    <h2>Book</h2>
+    <ul>
+        <li>AddBook(Book)</li>
+        <li>EditBook(Book)</li>
+        <li>DeleteBook(BookID)</li>
+        <li>GetBook(BookID)</li>
+        <li>SearchBooks(SearchParameters)</li>
+    </ul>
+    <h2>Advert</h2>
+    <ul>
+        <li>AddAdvert(Advert)</li>
+        <li>EditAdvert(Advert)</li>
+        <li>DeleteAdvert(AdvertID)</li>
+        <li>GetAdvert(AdvertID)</li>
+        <li>AddPicture(AdvertID, Picture)</li>
+    </ul>
+    <h2>Author</h2>
+    <ul>
+        <li>AddAuthor(Author)</li>
+        <li>EditAuthor(Author)</li>
+        <li>DeleteAuthor(AuthorID)</li>
+        <li>GetAuthor(AuthorID)</li>
+        <li>SearchAuthors(SearchParameters)</li>
+    </ul>
+    <h2>Genre</h2>
+    <ul>
+        <li>GetGenres()</li>
+    </ul>
+    <h2>Preferences</h2>
+    <ul>
+        <li>LikeAuthor(Token, AuthorID)</li>
+        <li>UnlikeAuthor()</li>
+        <li>LikeGenre(Token, GenreID)</li>
+        <li>UnlikeGenre(Token, GenreID)&zwnj;</li>
+        <li>LikeBook(Token, BookID)</li>
+        <li>UnlikeBook(Token, BookID)</li>
+    </ul>
 </body>
 </html>
