@@ -58,6 +58,16 @@ var requestHandler = function (request, response) {
                 response.end();
             });
             break;
+        case "/Resources/UseCase":
+            fs.readFile('./Resources/UseCase.jpg', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                response.writeHeader(200, { "Content-Type": "image/jpg" });
+                response.write(html);
+                response.end();
+            });
+            break;
         default:
             fs.readFile('./views/pagenotfound.html', function (err, html) {
                 if (err) {
