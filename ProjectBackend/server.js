@@ -1,5 +1,4 @@
 /* jshint node: true */
-//SAMO testira aplikacijo
 "use strict";
 // content of index.js
 var http = require('http');
@@ -21,6 +20,36 @@ var requestHandler = function (request, response) {
             break;
         case "/posebnosti/":
             fs.readFile('./views/posebnosti.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                response.writeHeader(200, { "Content-Type": "text/html" });
+                response.write(html);
+                response.end();
+            });
+            break;
+        case "/zunanji-API/":
+            fs.readFile('./views/zunanji-API.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                response.writeHeader(200, { "Content-Type": "text/html" });
+                response.write(html);
+                response.end();
+            });
+            break;
+        case "/podatkovni-model/":
+            fs.readFile('./views/podatkovni-model.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                response.writeHeader(200, { "Content-Type": "text/html" });
+                response.write(html);
+                response.end();
+            });
+            break;
+        case "/REST/":
+            fs.readFile('./views/REST.html', function (err, html) {
                 if (err) {
                     throw err;
                 }
