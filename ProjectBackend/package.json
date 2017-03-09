@@ -1,0 +1,9 @@
+{
+  "name": "project-backend",
+  "version": "0.0.0",
+  "description": "ProjectBackend",
+  "main": "server.js",
+  "author": {
+    "name": "Natanael"
+  }
+}
