@@ -33,7 +33,16 @@
     <Content Include="README.md" />
     <Content Include="views\funkcionalnosti.html" />
     <Content Include="views\pagenotfound.html" />
+    <Content Include="views\podatkovni-model.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\posebnosti.html" />
+    <Content Include="views\REST.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\zunanji-API.html">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="views\" />
