@@ -8,6 +8,16 @@ var port = 3000;
 var requestHandler = function (request, response) {
     console.log(request.url);
     switch (request.url) {
+        case "/":
+            fs.readFile('./views/index.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                response.writeHeader(200, { "Content-Type": "text/html" });
+                response.write(html);
+                response.end();
+            });
+            break;
         case "/funkcionalnosti/":
             fs.readFile('./views/funkcionalnosti.html', function (err, html) {
                 if (err) {

@@ -41,6 +41,7 @@
     <Content Include="views\REST.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\index.html" />
     <Content Include="views\zunanji-API.html">
       <SubType>Code</SubType>
     </Content>
