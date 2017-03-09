@@ -1,4 +1,5 @@
 /* jshint node: true */
+//SAMO testira aplikacijo
 "use strict";
 // content of index.js
 var http = require('http');
